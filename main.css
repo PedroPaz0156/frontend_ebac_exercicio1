@@ -6,8 +6,8 @@
     box-sizing: border-box;
 }
 /* Configurações de Cabeçalho */
-header{
-    padding: 16px, 0;
+header, form button{
+    padding: 16px;
     background-color: #182C61;
     color: #ecf0f1;
     font-family: "Bungee", sans-serif;
@@ -48,9 +48,10 @@ section .container {
     align-items: flex-start;
 }
 
-section h2 {
+section h2, h3 {
     font-family: "Bungee", sans-serif;
     font-weight: normal;
+    margin-bottom: 16px;
 }
 
 .fachada {
@@ -61,10 +62,6 @@ section h2 {
 section{
     padding: 24px, 0;
     color: #182C61;
-}
-
-section h2 {
-    margin-bottom: 16px;
 }
 
 section p {
@@ -79,4 +76,56 @@ section p {
 
 .lista-logos li {
     display: inline;
+}
+/* Configurações do rodapé e a seção "Contato" */
+
+#contato .container {
+    display: block;
+}
+
+.contato-metodos {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input, form textarea, form button {
+    display: block;
+    width:320px;
+    margin-bottom: 8px;
+    padding: 2px;
+    resize: none;
+    font-family: "Roboto", sans-serif;
+}
+
+form textarea {
+    height: 120px;
+}
+
+form input, form textarea:focus {
+    outline-color: #182C61;
+}
+
+form button {
+    cursor: pointer;
+    padding: 18px;
+}
+
+form button:hover {
+    background-color: #3653a2;
+}
+
+#contato ul li, #contato ul li a {
+    display: inline;
+    margin-right: 8px;
+    text-decoration: none;
+}
+
+.redesocial {
+    width: 36px;
+}
+
+footer {
+    background-color: #182C61;
+    color: #ecf0f1;
+    padding: 24px;
 }
