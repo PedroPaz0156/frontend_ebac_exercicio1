@@ -5,17 +5,26 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-header {
+/* Configurações de Cabeçalho */
+header{
     padding: 16px, 0;
     background-color: #182C61;
     color: #ecf0f1;
+    font-family: "Bungee", sans-serif;
+}
+
+header h1{
+    font-weight: normal;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
 }
 
 header nav li {
     display: inline;
     margin-left: 16px;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 header nav li a {
@@ -29,8 +38,45 @@ header nav li a {
     margin: 0 auto;
 }
 
-header .container {
+header .container, section .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+/* Configurações da área "Sobre" do site */
+section .container {
+    align-items: flex-start;
+}
+
+section h2 {
+    font-family: "Bungee", sans-serif;
+    font-weight: normal;
+}
+
+.fachada {
+    width: 40%; 
+    margin-right: 16px;
+}
+
+section{
+    padding: 24px, 0;
+    color: #182C61;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+.lista-logos li img {
+    height: 36px;
+    margin-right: 10px;
+    width: auto;
+}
+
+.lista-logos li {
+    display: inline;
 }
