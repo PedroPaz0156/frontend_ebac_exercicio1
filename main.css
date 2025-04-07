@@ -4,7 +4,32 @@ body {
 }
 
 section { 
+    display: block;
     background-color: rgb(200, 200, 200);
-    border: 25px;
+    border: 24px;
     border-radius: 25%;
+}
+
+form {
+    display:table-column-group;
+    width: 400px;
+}
+
+form input, button {
+    width: 300px;
+    font-size: 14px;
+}
+
+form button {
+    color: white;
+    background-color: rgb(89, 167, 89);
+    font-weight: bold;
+}
+
+.error-message {
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    display: none;
 }
