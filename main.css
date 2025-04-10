@@ -11,7 +11,7 @@ section {
 }
 
 form {
-    display:table-column-group;
+    display:inline-block;
     width: 400px;
 }
 
@@ -29,6 +29,14 @@ form button {
 .error-message {
     background-color: red;
     color: white;
+    font-size: 16px;
+    font-weight: bold;
+    display: none;
+}
+
+.success-message {
+    color: white;
+    background-color: rgb(89, 167, 89);
     font-size: 16px;
     font-weight: bold;
     display: none;

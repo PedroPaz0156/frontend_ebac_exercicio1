@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel=”stylesheet” href=”./main.css”>
+    <script src="./main.js"></script>
     <title>Formulário Teste</title>
 </head>
 <body>
     <section>
-        <h1> Formulário de comparação </h1>
-        <form>
-            <input type="number" placeholder="Coloque um valor númerico">
-            <input type="number" placeholder="Coloque um valor númerico">
+        <h1> Formulário </h1>
+        <form id="formulario">
+            <input id="campoA" type="number" placeholder="Coloque um valor númerico">
+            <input id="campoB" type="number" placeholder="Coloque um valor númerico">
             <button type="submit"> Comparar </button>
+            <button type="reset"> Limpar campos </button>
         </form>
         <p class="error-message">
             O primeiro valor deve ser menor que o segundo valor.
+        </p>
+        <p class="success-message">
+
         </p>
     </section>
 </body>
