@@ -1,0 +1,160 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.container { 
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header { 
+    background-color: rgb(55, 117, 168);
+    color: #fff;
+    padding: 16px 0;
+    border-bottom: 1px solid inherit;
+}
+
+header h1 { 
+    font-size: 2em;
+}
+
+#sobre-a-loja .container { 
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 { 
+    color: rgb(55,117,168);
+    padding: 8px;
+    border-bottom: 2px solid rgb(55, 117, 168);
+    margin: 8px;
+}
+
+nav ul li {
+    display: inline;
+    float: left;
+    list-style: none;
+    padding: 16px;
+}
+
+li a { 
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#sobre-a-loja img { 
+    max-width: 400px;
+    width: 100%;
+    margin-right: 16px;
+}
+
+#sobre-a-loja p { 
+    font-size: 1.5em;
+}
+
+.clear-left { 
+    clear: both;
+}
+
+.lista-produtos img { 
+    max-width: 200px;
+    width: 100%;
+}
+
+.lista-produtos ul { 
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 3%;
+    font-size: 1em;
+}
+
+.lista-produtos ul li {
+    list-style: none;
+}
+
+.lista-produtos ul li p{
+    text-justify: auto;
+}
+
+.lista-produtos button { 
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: rgb(55, 117, 168);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container { 
+        max-width: 1023px;
+    }
+
+    #sobre-a-loja img { 
+        max-width: 50%;
+    }
+
+    #produtos img { 
+        max-width: 300px;
+    }
+
+    #produtos ul { 
+        grid-template-columns: 48% 48%;
+        column-gap: 2%;
+        font-size: 1.2em;
+        margin-left: 5%;
+    }
+    }
+
+
+@media screen and (max-width: 640px) {
+    .container { 
+        max-width: 639px;
+    }
+
+    header { 
+        font-size: 1em;
+        padding-left: 1em;
+    }
+
+    #sobre-a-loja .container { 
+        display: inline;
+    }
+
+    #sobre-a-loja img { 
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    #produtos img { 
+        max-width: 400px;
+    }
+
+    h2 { 
+        font-size: 2em;
+    }
+
+    #produtos ul { 
+        grid-template-columns: 95%;
+        font-size: 1.2em;
+        margin-left: 5%;
+        margin-bottom: 10%;
+    }
+    
+}
