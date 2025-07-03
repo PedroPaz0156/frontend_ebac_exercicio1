@@ -1,0 +1,11 @@
+@use 'variaveis';
+
+body { 
+    display: flex;
+    background-color: variaveis.$corFundo;
+}
+
+img{ 
+    display: inline;
+    width: 100%;
+}
