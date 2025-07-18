@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="@@ENDERECO_CSS">
+    <title>Tabuada Automática</title>
+</head>
+<body>
+    <main>
+        <h1>Tabuada Automática</h1>
+        <form id="tabuada">
+            <label for="numeroBase">Você quer a tabuada de que número?</label>
+            <input type="number" id="numeroBase" required min="1" value="1">
+            <label for="numeroMax">Até que número deve se multiplicar?</label>
+            <input type="number" id="numeroMax" required min="2" value="2">
+            <button type="submit">Criar tabuada</button>
+        </form>
+
+        <div class="resultado">
+            <h2>Tabela de multiplicação</h2>
+            <span class="multiplicacoes"></span>
+        </div>
+    </main>
+
+    <script src="@@ENDERECO_JS"></script>
+</body>
+</html>
