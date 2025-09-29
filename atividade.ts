@@ -5,9 +5,10 @@ function multiplicacao(valor1: number, valor2:number) {
 
 
 function olaNome(nome: String) { 
-    return console.log("Olá " + nome);
+    return "Olá " + nome;
 }
 
 multiplicacao(5, 25);
 
 olaNome("Pedro");
+
